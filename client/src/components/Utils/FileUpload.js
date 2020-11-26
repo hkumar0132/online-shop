@@ -17,8 +17,8 @@ function FileUpload(props) {
         Axios.post('/api/product/uploadImage', formData, config)
             .then(response => {
                 if(response.data.success) {
-                    setImages([...Images, response.data.image]);
-                    props.refreshFunction([...Images, response.data.image]);
+                    setImages([...Images, response.data.image])
+                    props.refreshFunction([...Images, response.data.image])
                 }
                 else {
                     alert('Failed to add to the server')
@@ -59,7 +59,7 @@ function FileUpload(props) {
             <div style={{ display: 'flex', width: '350px', height: '240px', overflowX: 'scroll'}}>
                 {Images.map((image, index) => (
                     <div onClick={() => onDelete(image)}>
-                        <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`http://localhost:5000/${image}`} alt={`productImg-${index}`} />
+                        <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`https://stark-reaches-48410.herokuapp.com/${image}`} alt={`productImg-${index}`} />
                     </div>
                 ))}
             </div>
