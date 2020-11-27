@@ -21,7 +21,7 @@ function FileUpload(props) {
                     props.refreshFunction([...Images, response.data.image]);
                 }
                 else {
-                    alert('Failed to add to the server')
+                    alert('You may not have appropriate permission for this')
                 }
             })
     }
@@ -60,9 +60,8 @@ function FileUpload(props) {
                 {Images.map((image, index) => (
                     <div onClick={() => onDelete(image)}>
                         <img style={{ minWidth: '300px', width: '300px', height: '240px' }} 
-                            src={`https://stark-reaches-48410.herokuapp.com/${image}`} 
-                            alt={`productImg-${index}`} 
-                        />
+                        src={`http://localhost:5000/${image}`} 
+                        alt={`productImg-${index}`} />
                     </div>
                 ))}
             </div>
