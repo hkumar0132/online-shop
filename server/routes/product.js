@@ -33,7 +33,7 @@ router.post("/uploadImage", auth, (req, res) => {
         }
         return res.json({ success: true, image: res.req.file.path, fileName: res.req.file.filename })
     })
-});
+})
 
 router.post("/uploadProduct", auth, (req, res) => {
 
@@ -46,8 +46,7 @@ router.post("/uploadProduct", auth, (req, res) => {
         }
         return res.status(200).json({ success: true })
     })
-
-});
+})
 
 router.post("/getProducts", (req, res) => {
 

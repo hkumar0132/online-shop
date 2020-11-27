@@ -6,7 +6,7 @@ function UserCardBlock(props) {
     const renderCartImage = (images) => {
         if(images.length > 0) {
             let image = images[0]
-            return `https://stark-reaches-48410.herokuapp.com/${image}`
+            return `http://localhost:5000/${image}`
         }
     }
 
@@ -17,7 +17,7 @@ function UserCardBlock(props) {
                     <img style={{ width: '70px' }} alt="product" 
                     src={renderCartImage(product.images)} />
                 </td> 
-                <td>{product.quantity} EA</td>
+                <td>{product.quantity} </td>
                 <td>$ {product.price} </td>
                 <td>
                     <Button size="medium"  type="danger"

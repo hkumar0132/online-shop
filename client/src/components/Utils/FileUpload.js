@@ -1,7 +1,7 @@
-import { Icon } from 'antd';
-import Axios from 'axios';
-import React, { useState } from 'react';
-import Dropzone from 'react-dropzone';
+import { Icon } from 'antd'
+import Axios from 'axios'
+import React, { useState } from 'react'
+import Dropzone from 'react-dropzone'
 
 function FileUpload(props) {
 
@@ -64,7 +64,7 @@ function FileUpload(props) {
                 ))}
             </div>
         </div>
-    );
+    )
 }
 
-export default FileUpload;
+export default FileUpload
