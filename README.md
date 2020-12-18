@@ -4,4 +4,4 @@ Full stack application built with MERN stack.
 - Paypal sandbox API for secure payment
 - Responsive to screen size
 - Built with MERN stack, Redux and Ant Design
-- Deployed on Heroku[https://stark-reaches-48410.herokuapp.com/]
+- Video demo[https://drive.google.com/file/d/16ZElYGEzeTj9Sc8DSZ-huk1ahz8o2xVX/view?usp=sharing]
