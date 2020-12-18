@@ -48,4 +48,4 @@ function UserCardBlock(props) {
     )
 }
 
-export default UserCardBlock;
+export default UserCardBlock
