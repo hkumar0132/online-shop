@@ -1,4 +1,4 @@
-Full stack application built with MERN stack.
+Full stack E-commerce application built with MERN stack.
 
 - Buy and upload product
 - Paypal sandbox API for secure payment
